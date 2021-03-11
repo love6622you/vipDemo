@@ -1,0 +1,7 @@
+# 以 # 開頭為注釋
+#[production staging]
+> 1%
+last 2 versions
+not dead
+
+#[development]
