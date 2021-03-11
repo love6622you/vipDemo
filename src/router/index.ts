@@ -1,24 +1,25 @@
-import { createRouter, createWebHashHistory, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Home from '../views/Home.vue';
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home,
+    path: '/missionOne',
+    name: 'missionOne',
+    component: () => import(/* webpackChunkName: "missionOne" */ '../views/mission/MissionOne.vue'),
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    path: '/missionTwo',
+    name: 'missionTwo',
+    component: () => import(/* webpackChunkName: "missionTwo" */ '../views/mission/MissionTwo.vue'),
   },
   {
-    path: '/vuex_test',
-    name: 'VuexTest',
-    component: () => import(/* webpackChunkName: "Search" */ '../views/UseVuexExample.vue'),
+    path: '/vip',
+    name: 'vip',
+    component: () => import(/* webpackChunkName: "vip" */ '../views/vip/Vip.vue'),
+  },
+  {
+    path: '/mcenter',
+    name: 'mcenter',
+    component: () => import(/* webpackChunkName: "mcenter" */ '../views/mcenter/Index.vue'),
   },
 ];
 
