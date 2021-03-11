@@ -49,7 +49,6 @@ $font_color: #717171;
 footer {
   position: fixed;
   display: inline-flex;
-  left: 0;
   bottom: 0;
   height: 64px;
   width: 100%;
