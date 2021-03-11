@@ -26,5 +26,6 @@ export default defineComponent({
 .body-content {
   // header: 44px , footer: 64px
   height: calc(100vh - 108px);
+  // height: 100%;
 }
 </style>
