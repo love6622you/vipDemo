@@ -1,6 +1,6 @@
 <template>
   <header>
-    header
+    {{ title }}
   </header>
 </template>
 
@@ -8,7 +8,12 @@
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'Header',
-  setup() {},
+  computed: {
+    title() {
+      let obj = this.$route.name;
+      return obj;
+    },
+  },
 });
 </script>
 
